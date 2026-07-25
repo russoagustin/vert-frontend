@@ -19,6 +19,7 @@ body {
     line-height: 1.5;
 }
 
+
 .content {
     margin: 10px;
     border: 1px dashed var(--color-primario);
@@ -31,6 +32,12 @@ h1 {
     display: inline-block;
     padding-right: 8px;
     border-right: 5px solid var(--color-primario);
+    animation: parpadeo-borde 1.2s ease-in-out infinite;
+}
+
+@keyframes parpadeo-borde {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: var(--color-primario); }
 }
 
 .subtitle {
@@ -45,6 +52,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 16px;
+    margin-bottom: 50px;
 }
 
 .catalog-item {
