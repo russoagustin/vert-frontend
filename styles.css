@@ -35,6 +35,28 @@ h1 {
     animation: parpadeo-borde 1.2s ease-in-out infinite;
 }
 
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0 16px;
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 @keyframes parpadeo-borde {
   0%, 100% { border-right-color: transparent; }
   50% { border-right-color: var(--color-primario); }
